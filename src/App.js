@@ -1,10 +1,15 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-import "./App.css";
+import CardHomePage from "./components/CardHomePage";
+import "./styles/App.css";
 
 function App() {
   return (
-    <LandingPage/>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/cardpage" element={<CardHomePage />} />
+    </Routes>
   );
 }
 

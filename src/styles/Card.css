@@ -1,0 +1,128 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* margin: 0 1rem; */
+}
+
+.card {
+  background-color: rgb(255, 209, 209);
+  height: 70%;
+  min-height: 1126px;
+  /* min-width: 800px; */
+  width: 800px;
+  margin: auto 0;
+  box-shadow: 10px 20px 20px 10px rgba(126, 126, 126, 0.164);
+
+  /* animation styles */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+
+/* card cover page front */
+.cover-page-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 4rem;
+}
+
+.honey-heart-img {
+  width: 100px;
+  position: absolute;
+  filter: drop-shadow(5px 5px 10px rgba(255, 0, 0, 0.705));
+}
+
+.honey-heart-img.heart-1 {
+  left: 30%;
+  top: 53%;
+  transform: rotate(-25deg);
+}
+
+.honey-heart-img.heart-2 {
+  left: 60%;
+  top: 50%;
+  transform: rotate(30deg);
+}
+
+.honey-heart-img.heart-3 {
+  top: 40%;
+}
+
+.honey-img {
+  width: 250px;
+  filter: drop-shadow(0 20px 10px rgba(245, 179, 56, 0.678));
+}
+
+/* card cover page back */
+.cover-page-back {
+  transform-origin: right;
+  backface-visibility: hidden;
+}
+
+/* card back page front */
+.back-page-front {
+  transform-origin: left;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 3rem;
+}
+
+.message-address {
+  align-self: flex-start;
+  margin-bottom: 3rem;
+}
+
+.message-content {
+  flex: 1;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  text-indent: 3rem;
+  font-size: 2rem;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.message-signature {
+  align-self: flex-end;
+}
+
+/* card back page back */
+.closing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+}
+
+.closing-header {
+  font-size: 2rem;
+}
+
+.closing-media {
+  background-color: black;
+  width: 80%;
+  height: 40%;
+}
+
+/* card closing/opening animation */
+.card-close {
+  transform: rotateY(-180deg);
+}
+
+.card-open {
+  transform: rotateY(180deg);
+}
