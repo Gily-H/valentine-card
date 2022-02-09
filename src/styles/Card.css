@@ -1,0 +1,33 @@
+.card-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(255, 233, 251);
+  height: 70%;
+  width: 800px;
+  margin: auto 0;
+  box-shadow: 10px 20px 20px 10px rgba(126, 126, 126, 0.164);
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+
+.card-cover {
+  transform-origin: right;
+}
+
+.card-back {
+  transform-origin: left;
+}
+
+.card-close {
+  transform: rotateY(-180deg);
+}
+
+.card-open {
+  transform: rotateY(180deg);
+}
