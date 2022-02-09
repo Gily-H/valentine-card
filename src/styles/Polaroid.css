@@ -1,0 +1,15 @@
+.polaroid-container {
+  background-color: aliceblue;
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  text-align: center;
+}
+
+.polaroid-picture {
+  padding: 1rem 0;
+  height: 80%;
+  width: 90%;
+  margin: auto;
+  object-fit: cover;
+}
