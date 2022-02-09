@@ -1,13 +1,8 @@
 import React from "react";
-import Card from "./Card";
-import "../styles/CardHomePage.css";
+import Card from "./card/Card";
 
 const CardHomePage = () => {
-  return (
-    <div className="homepage-container">
-      <Card />
-    </div>
-  );
+  return <Card />;
 };
 
 export default CardHomePage;

@@ -1,0 +1,54 @@
+.back-page {
+  border: 1px solid rgb(190, 190, 190);
+  perspective: -1000px;
+  transform-origin: left;
+}
+
+.back-page-front {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 3rem;
+  transform-origin: right;
+  transition: 2s;
+}
+
+.message-address {
+  align-self: flex-start;
+  margin-bottom: 3rem;
+}
+
+.message-content {
+  flex: 1;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-indent: 3rem;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.message-signature {
+  align-self: flex-end;
+}
+
+/* card back page back */
+.back-page-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transform-origin: right;
+  transition: 2s;
+}
+
+.closing-header {
+  font-size: 2rem;
+}
+
+.closing-media {
+  background-color: black;
+  width: 80%;
+  height: 400px;
+}

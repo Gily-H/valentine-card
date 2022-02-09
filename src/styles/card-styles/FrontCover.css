@@ -1,0 +1,49 @@
+.cover-page {
+  border: 1px solid rgb(190, 190, 190);
+  perspective: -1000px;
+}
+
+.cover-page-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform-origin: left;
+  transition: 2s;
+}
+
+.card-title {
+  font-size: 4rem;
+}
+
+.honey-heart-img {
+  position: absolute;
+  width: 100px;
+  filter: drop-shadow(5px 5px 10px rgba(255, 0, 0, 0.705));
+}
+
+.honey-heart-img.heart-1 {
+  left: 30%;
+  top: 53%;
+  transform: rotate(-25deg);
+}
+
+.honey-heart-img.heart-2 {
+  left: 60%;
+  top: 50%;
+  transform: rotate(30deg);
+}
+
+.honey-heart-img.heart-3 {
+  top: 40%;
+}
+
+.honey-img {
+  width: 250px;
+  filter: drop-shadow(0 20px 10px rgba(245, 179, 56, 0.678));
+}
+
+.cover-page-back {
+  transform-origin: left;
+  transition: 2s;
+}
