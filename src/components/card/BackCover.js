@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../styles/card-styles/BackCover.css";
 
-const BackCover = () => {
+const BackCover = (props) => {
+  const changeStatus = () => {
+    props.openCloseHandler();
+    props.bringForward();
+  };
+
   return (
-    <div className="card back-page">
-      <div className="back-page-front">
+    <div className={`card back-page ${props.backStatus ? "flip-cover" : ""} ${props.isForward ? "bring-forward" : ""}`}>
+      <div className="back-page-front" onClick={changeStatus}>
         <h2 className="message-address">Dear Honey,</h2>
         <p className="message-content">
           est ullamcorper eget nulla facilisi. Morbi tincidunt ornare massa eget egestas purus. Mattis molestie a
@@ -20,6 +25,7 @@ const BackCover = () => {
       </div>
       <div className="back-page-back">
         <h2 className="closing-header">Love you always</h2>
+        <div className="closing-media-backdrop"></div>
         <img className="closing-media" src="" alt="slideshow/video" />
       </div>
     </div>

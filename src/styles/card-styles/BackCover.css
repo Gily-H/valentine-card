@@ -1,12 +1,3 @@
-.back-page {
-  position: absolute;
-  left: 55%;
-  top: 10%;
-  transform-style: preserve-3d;
-  transition: 2s;
-  transform-origin: left;
-}
-
 .back-page-front,
 .back-page-back {
   position: absolute;
@@ -44,6 +35,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 15px;
   transform: rotateY(180deg);
 }
 
@@ -51,7 +43,18 @@
   font-size: 2rem;
 }
 
-.closing-media {
+.closing-media-backdrop {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(5deg);
+  top: 31%;
+  background: rgb(255, 136, 136);
+  height: 480px;
+  width: 88%;
+  text-align: center;
+}
+
+.closing-media{
   background-color: black;
   width: 80%;
   height: 400px;
