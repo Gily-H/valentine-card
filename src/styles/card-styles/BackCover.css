@@ -1,0 +1,61 @@
+.back-page-front,
+.back-page-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back-page-front {
+  padding: 3rem;
+}
+
+.message-address {
+  align-self: flex-start;
+  margin-bottom: 3rem;
+}
+
+.message-content {
+  flex: 1;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-indent: 3rem;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.message-signature {
+  align-self: flex-end;
+}
+
+/* card back page back */
+.back-page-back {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  transform: rotateY(180deg);
+}
+
+.closing-header {
+  font-size: 2rem;
+}
+
+.closing-media-backdrop {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(5deg);
+  top: 31%;
+  background: rgb(255, 136, 136);
+  height: 480px;
+  width: 88%;
+  text-align: center;
+}
+
+.closing-media{
+  background-color: black;
+  width: 80%;
+  height: 400px;
+}
