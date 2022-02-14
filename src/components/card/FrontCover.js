@@ -19,9 +19,27 @@ const FrontCover = (props) => {
         <img className="honey-img" src={HONEY_POT_IMAGE} alt="honey pot" />
       </div>
       <div className="cover-page-back">
-        <Polaroid className="polaroid-1" pic={picture} text="blahblahblah" />
-        <Polaroid className="polaroid-2" pic={picture2} text="blahblahblah" />
-        <Polaroid className="polaroid-3" pic={picture3} text="blahblahblah" />
+        <Polaroid
+          className="polaroid-1"
+          pic={picture}
+          text="blahblahblah"
+          polaroidHandler={props.polaroidHandler}
+          displayOverlayPolaroid={props.displayOverlayHandler}
+        />
+        <Polaroid
+          className="polaroid-2"
+          pic={picture2}
+          text="blahblahblah"
+          polaroidHandler={props.polaroidHandler}
+          displayOverlayPolaroid={props.displayOverlayHandler}
+        />
+        <Polaroid
+          className="polaroid-3"
+          pic={picture3}
+          text="blahblahblah"
+          polaroidHandler={props.polaroidHandler}
+          displayOverlayPolaroid={props.displayOverlayHandler}
+        />
       </div>
     </div>
   );
