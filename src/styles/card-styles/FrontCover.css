@@ -34,23 +34,52 @@
 
 .honey-heart-img.heart-1 {
   left: 30%;
-  top: 53%;
-  transform: rotate(-25deg);
+  top: 50%;
+  animation: jiggle 1.5s linear infinite;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(25deg);
+  }
+
+  50% {
+    transform: rotate(-25deg);
+  }
+
+  100% {
+    transform: rotate(25deg);
+  }
 }
 
 .honey-heart-img.heart-2 {
   left: 60%;
-  top: 50%;
-  transform: rotate(30deg);
+  top: 45%;
+  animation: jiggle 1.5s infinite;
 }
 
 .honey-heart-img.heart-3 {
-  top: 40%;
+  top: 35%;
+  animation: jiggle 1.5s infinite;
 }
 
 .honey-img {
   width: 250px;
-  filter: drop-shadow(0 20px 10px rgba(245, 179, 56, 0.678));
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 20px 10px rgba(245, 179, 56, 0.678));
+  }
+
+  50% {
+    filter: drop-shadow(0 20px 50px rgba(245, 179, 56, 0.678));
+  }
+
+  100% {
+    filter: drop-shadow(0 20px 10px rgba(245, 179, 56, 0.678));
+  }
 }
 
 .cover-page-back {
@@ -62,7 +91,7 @@
 }
 
 .polaroid-2 {
-  left: 45%;
+  left: 42%;
   top: 25%;
   transform: rotate(15deg);
 }

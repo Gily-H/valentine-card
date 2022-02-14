@@ -1,13 +1,13 @@
 .card-container {
-  perspective: -1000px;
+  perspective: -500px;
 }
 
-.card-container:hover .back-page {
-  transform: rotateY(-180deg);
-}
-
-.card-container:hover .cover-page {
+.flip-cover {
   transform: rotateY(180deg);
+}
+
+.bring-forward {
+  z-index: 1000;
 }
 
 .card {
