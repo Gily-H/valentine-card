@@ -2,14 +2,6 @@
   perspective: -500px;
 }
 
-.flip-cover {
-  transform: rotateY(180deg);
-}
-
-.bring-forward {
-  z-index: 1000;
-}
-
 .card {
   background-color: rgb(255, 209, 209);
   height: 70%;
@@ -17,4 +9,22 @@
   width: 800px;
   box-shadow: 10px 20px 20px 10px rgba(126, 126, 126, 0.164);
   transform-style: preserve-3d;
+}
+
+.back-page,
+.cover-page {
+  position: absolute;
+  left: 48%;
+  top: 10%;
+  transform-style: preserve-3d;
+  transition: 2s;
+  transform-origin: left;
+}
+
+.flip-cover {
+  transform: rotateY(180deg);
+}
+
+.bring-forward {
+  z-index: 1;
 }

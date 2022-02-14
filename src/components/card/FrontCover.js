@@ -9,14 +9,9 @@ import HONEY_POT_IMAGE from "../../images/honeypot.png";
 import "../../styles/card-styles/FrontCover.css";
 
 const FrontCover = (props) => {
-  const changeStatus = () => {
-    props.openCloseHandler();
-    props.pushBack();
-  };
-
   return (
     <div className={`card cover-page ${props.coverStatus ? "flip-cover" : ""} `}>
-      <div className="cover-page-front" onClick={changeStatus}>
+      <div className="cover-page-front" onClick={props.openCloseHandler}>
         <h2 className="card-title">To My Honey</h2>
         <img className="honey-heart-img heart-1" src={HEART_IMAGE} alt="honey pot" />
         <img className="honey-heart-img heart-2" src={HEART_IMAGE} alt="honey pot" />

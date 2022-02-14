@@ -25,6 +25,7 @@ const BackCover = (props) => {
       </div>
       <div className="back-page-back">
         <h2 className="closing-header">Love you always</h2>
+        <div className="closing-media-backdrop"></div>
         <img className="closing-media" src="" alt="slideshow/video" />
       </div>
     </div>
