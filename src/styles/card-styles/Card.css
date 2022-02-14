@@ -1,8 +1,13 @@
 .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  perspective: -1000px;
+}
+
+.card-container:hover .back-page {
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .cover-page {
+  transform: rotateY(180deg);
 }
 
 .card {
@@ -11,16 +16,5 @@
   min-height: 1126px;
   width: 800px;
   box-shadow: 10px 20px 20px 10px rgba(126, 126, 126, 0.164);
-  /* min-width: 800px; */
-  /* margin: auto 0; */
-
   transform-style: preserve-3d;
-}
-
-.card-close {
-  transform: rotateY(-180deg);
-}
-
-.card-open {
-  transform: rotateY(180deg);
 }

@@ -1,16 +1,23 @@
 .back-page {
-  border: 1px solid rgb(190, 190, 190);
-  perspective: -1000px;
+  position: absolute;
+  left: 55%;
+  top: 10%;
+  transform-style: preserve-3d;
+  transition: 2s;
   transform-origin: left;
 }
 
-.back-page-front {
+.back-page-front,
+.back-page-back {
+  position: absolute;
   display: flex;
   flex-direction: column;
   height: 100%;
+  backface-visibility: hidden;
+}
+
+.back-page-front {
   padding: 3rem;
-  transform-origin: right;
-  transition: 2s;
 }
 
 .message-address {
@@ -34,13 +41,10 @@
 
 /* card back page back */
 .back-page-back {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100%;
-  transform-origin: right;
-  transition: 2s;
+  align-items: center;
+  width: 100%;
+  transform: rotateY(180deg);
 }
 
 .closing-header {

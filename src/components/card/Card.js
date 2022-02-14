@@ -7,8 +7,8 @@ import "../../styles/card-styles/Card.css";
 const Card = () => {
   return (
     <div className="card-container">
-      {/* <FrontCover /> */}
-      <BackCover />
+      <FrontCover />
+      {/* <BackCover /> */}
     </div>
   );
 };
