@@ -4,7 +4,7 @@ import FrontCover from "./FrontCover";
 import BackCover from "./BackCover";
 import "../../styles/card-styles/Card.css";
 
-const Card = () => {
+const Card = (props) => {
   const [frontOpen, setFrontOpen] = useState(false);
   const [backOpen, setBackOpen] = useState(false);
   const [isForward, setIsForward] = useState(false);
@@ -29,10 +29,16 @@ const Card = () => {
           backStatus={backOpen}
           isForward={isForward}
           bringForward={bringForward}
+          slideshowHandler={props.slideshowHandler}
         />
       </div>
       <div className="card-container">
-        <FrontCover openCloseHandler={changeCoverStatus} coverStatus={frontOpen} />
+        <FrontCover
+          openCloseHandler={changeCoverStatus}
+          coverStatus={frontOpen}
+          polaroidHandler={props.polaroidHandler}
+          displayOverlayHandler={props.displayOverlayHandler}
+        />
       </div>
     </>
   );
