@@ -4,6 +4,7 @@ import Overlay from "./Overlay";
 
 const CardHomePage = () => {
   const [showOverlay, setShowOverlay] = useState(false);
+  const [slideshow, setSlideshow] = useState();
   const [overlayPolaroid, setOverlayPolaroid] = useState({
     pic: "",
     text: "",
@@ -15,6 +16,7 @@ const CardHomePage = () => {
 
   const closeOverlay = () => {
     setShowOverlay(false);
+    setSlideshow(false);
   };
 
   const polaroidHandler = (image, text) => {
@@ -24,10 +26,24 @@ const CardHomePage = () => {
     });
   };
 
+  const slideshowHandler = () => {
+    setSlideshow(true);
+    displayOverlay();
+  };
+
   return (
     <>
-      <Card displayOverlayHandler={displayOverlay} polaroidHandler={polaroidHandler} />
-      <Overlay showOverlay={showOverlay} closeOverlayHandler={closeOverlay} polaroid={overlayPolaroid} />
+      <Card
+        displayOverlayHandler={displayOverlay}
+        polaroidHandler={polaroidHandler}
+        slideshowHandler={slideshowHandler}
+      />
+      <Overlay
+        showOverlay={showOverlay}
+        closeOverlayHandler={closeOverlay}
+        polaroid={overlayPolaroid}
+        slideshow={slideshow}
+      />
     </>
   );
 };

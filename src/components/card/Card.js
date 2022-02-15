@@ -29,6 +29,7 @@ const Card = (props) => {
           backStatus={backOpen}
           isForward={isForward}
           bringForward={bringForward}
+          slideshowHandler={props.slideshowHandler}
         />
       </div>
       <div className="card-container">

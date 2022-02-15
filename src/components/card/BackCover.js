@@ -1,10 +1,15 @@
 import React from "react";
+import { SLIDESHOW_IMAGES } from "../../images/slideshow";
 import "../../styles/card-styles/BackCover.css";
 
 const BackCover = (props) => {
   const changeStatus = () => {
     props.openCloseHandler();
     props.bringForward();
+  };
+
+  const showSlideshow = () => {
+    props.slideshowHandler();
   };
 
   return (
@@ -26,7 +31,7 @@ const BackCover = (props) => {
       <div className="back-page-back">
         <h2 className="closing-header">Love you always</h2>
         <div className="closing-media-backdrop"></div>
-        <img className="closing-media" src="" alt="slideshow/video" />
+        <img className="closing-media" src={SLIDESHOW_IMAGES[23]} alt="slide" onClick={showSlideshow} />
       </div>
     </div>
   );

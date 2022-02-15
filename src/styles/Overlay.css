@@ -20,6 +20,7 @@
   min-height: 1200px;
 }
 
+/* Overlay with polaroid */
 .overlay-polaroid {
   width: 100%;
   height: 90%;
@@ -31,12 +32,57 @@
   padding-top: 1rem;
 }
 
+/* Overlay with slideshow */
+.overlay-slideshow {
+  background-color: black;
+  width: 60%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-image {
+  object-fit: contain;
+  max-height: 1500px;
+  min-width: 800px;
+  max-width: 70%;
+}
+
+.slide-left-button,
+.slide-right-button {
+  position: absolute;
+  top: 50%;
+  padding: 0.8rem 1rem;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: white;
+  background-color: rgba(209, 209, 209, 0.486);
+}
+
+.slide-right-button {
+  right: 0;
+}
+
+.slide-left-button {
+  left: 0;
+}
+
+.slide-left-button:hover,
+.slide-right-button:hover {
+  background-color: rgba(170, 169, 169, 0.72);
+  cursor: pointer;
+}
+
+/* Exit overlay button */
 .overlay-exit-button {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%);
-  padding: 1.6rem;
+  padding: 1.2rem 1.6rem;
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
