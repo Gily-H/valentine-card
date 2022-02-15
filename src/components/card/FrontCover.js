@@ -20,21 +20,21 @@ const FrontCover = (props) => {
         <Polaroid
           className="polaroid-1"
           pic={POLAROID_IMAGES[1]}
-          text="blahblahblah"
+          text="Honey, you are the stars in my eyes. Nothing shines brighter than you and your smile. You light up my life. "
           polaroidHandler={props.polaroidHandler}
           displayOverlayPolaroid={props.displayOverlayHandler}
         />
         <Polaroid
           className="polaroid-2"
           pic={POLAROID_IMAGES[2]}
-          text="blahblahblah"
+          text="Watching the sunrise with my honey. Seeing you with the sun in the backdrop made me realize that you really are special, and I am one lucky guy."
           polaroidHandler={props.polaroidHandler}
           displayOverlayPolaroid={props.displayOverlayHandler}
         />
         <Polaroid
           className="polaroid-3"
           pic={POLAROID_IMAGES[0]}
-          text="blahblahblah"
+          text="You never cease to amaze me how much more beautiful you become with every day that passes. You will always be the most beautiful person to me."
           polaroidHandler={props.polaroidHandler}
           displayOverlayPolaroid={props.displayOverlayHandler}
         />

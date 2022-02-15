@@ -18,3 +18,7 @@
   margin: auto;
   object-fit: cover;
 }
+
+.polaroid-container p {
+  padding: 0 1rem;
+}
