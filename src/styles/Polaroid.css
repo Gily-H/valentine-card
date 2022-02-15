@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+.polaroid-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .polaroid-picture {
   padding: 1rem 0;
   height: 80%;

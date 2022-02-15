@@ -1,9 +1,7 @@
 import React from "react";
 import Polaroid from "../Polaroid";
 
-import picture from "../../images/profile.jpg";
-import picture2 from "../../images/profile.jpg";
-import picture3 from "../../images/profile.jpg";
+import {POLAROID_IMAGES} from "../../images/polaroids";
 import HEART_IMAGE from "../../images/Heart.png";
 import HONEY_POT_IMAGE from "../../images/honeypot.png";
 import "../../styles/card-styles/FrontCover.css";
@@ -19,9 +17,27 @@ const FrontCover = (props) => {
         <img className="honey-img" src={HONEY_POT_IMAGE} alt="honey pot" />
       </div>
       <div className="cover-page-back">
-        <Polaroid className="polaroid-1" pic={picture} text="blahblahblah" />
-        <Polaroid className="polaroid-2" pic={picture2} text="blahblahblah" />
-        <Polaroid className="polaroid-3" pic={picture3} text="blahblahblah" />
+        <Polaroid
+          className="polaroid-1"
+          pic={POLAROID_IMAGES[1]}
+          text="blahblahblah"
+          polaroidHandler={props.polaroidHandler}
+          displayOverlayPolaroid={props.displayOverlayHandler}
+        />
+        <Polaroid
+          className="polaroid-2"
+          pic={POLAROID_IMAGES[2]}
+          text="blahblahblah"
+          polaroidHandler={props.polaroidHandler}
+          displayOverlayPolaroid={props.displayOverlayHandler}
+        />
+        <Polaroid
+          className="polaroid-3"
+          pic={POLAROID_IMAGES[0]}
+          text="blahblahblah"
+          polaroidHandler={props.polaroidHandler}
+          displayOverlayPolaroid={props.displayOverlayHandler}
+        />
       </div>
     </div>
   );
